@@ -24,13 +24,8 @@ public class PlayerAnimation : MonoBehaviour
         _animator.SetFloat("Move", math.abs(move));
     }
 
-    public void MoveUp(float move)
+    public void MoveVertical(float move)
     {
-        _animator.SetFloat("MoveUp", move);
-    }
-
-    public void MoveDown(float move)
-    {
-        _animator.SetFloat("MoveDown", move);
+        _animator.SetFloat("MoveVertical", move);
     }
 }

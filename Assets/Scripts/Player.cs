@@ -28,8 +28,7 @@ public class Player : MonoBehaviour
         _rigidbody2D.velocity = new Vector2(moveHorizontal, moveVertical) * _speed;
         
         _playerAnimation.Move(moveHorizontal);
-        _playerAnimation.MoveUp(moveVertical);
-        _playerAnimation.MoveDown(moveVertical);
+        _playerAnimation.MoveVertical(moveVertical);
     }
 
     void FlipSprite(float move)
